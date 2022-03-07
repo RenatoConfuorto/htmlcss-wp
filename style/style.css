@@ -5,9 +5,18 @@
     box-sizing: border-box;
 }
 
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 html{
     font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* UTILITIES */
 
 .container{
     width: 80%;
@@ -17,6 +26,10 @@ html{
 
 .mb-1{
     margin-bottom: 1em;
+}
+
+.float{
+    float: left;
 }
 
 /* HEADER  */
@@ -62,7 +75,7 @@ html{
     overflow: hidden;
 }
 
-.banner::before{
+.layover::before{
     content: "";
     position: absolute;
     top: 0;
@@ -80,36 +93,66 @@ html{
     bottom: 3em;
 }
 
+    /* second section */
 
-.second-section{
-    height: 45vh;
-    background-color: #0186fd;
+.section-header{
+    padding: 0.5em;
 }
 
-.bg-color{
-    background-color: #abcfe7;
-}
-.float{
-    float: left;
-}
-.top-div{
-    height: 15%;
-}
+    /* column */
+
+        /*column size*/
+
 .side{
+    position: relative;
     width: 20%;
-    height: calc(85% - 20px);
     margin: 10px 0;
 }
 
 .center{
     width: calc(60% - 20px);
-    height: calc(85% - 20px);
     margin: 10px;
+}
+
+        /* column img  */
+
+.img-container{
+    position: relative;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.col-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+        /* column text */
+
+.side h3, .center h3{
+    font-size: 0.9em;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+}
+
+.side p, .center p{
+    font-size: 0.7em;
 }
 
 /* FOOTER  */
 .footer{
-    background-color: #8801fe;
+    /* background-color: #8801fe; */
     margin-top: 5px;
-    height: calc(10vh - 35px);
+    height: 3em;
+}
+
+.footer p{
+    line-height: 3em;
+    text-align: center;
+    font-size: 0.75em;
+}
+.footer .heart{
+    color: red;
 }

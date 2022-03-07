@@ -5,15 +5,46 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 .container{
-    width: 80vw;
-    margin: 10px auto 0 auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mb-1{
+    margin-bottom: 1em;
 }
 
 /* HEADER  */
 .header{
-    height: 8vh;
-    background-color: #e579e6;
+    height: 80px;
+    margin-top: 0.5em;
+    /* background-color: #e579e6; */
+}
+
+.logo{
+    height: 50px;
+    border-right: 1px solid lightgrey;
+    padding-right: 2em;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list > li{
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.nav-list > li > a{
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: lightgray;
 }
 
 /* MAIN  */
